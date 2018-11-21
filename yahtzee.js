@@ -1,11 +1,13 @@
-var randomDice = [1,2,3,4,5,6];
-
-function randomNumber(){
-    Math.floor(Math.random(6));
+//function for inclusive random number between max and min
+function randomNumber(min, max){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max-min+1)) + min;
+    
 }
 
 $(document).ready(function(){
     $("#randomButton").click(function(){
-        $("#result").html(randomNumber());
+        $("#result").html(randomNumber(1,6));
     });
 });
