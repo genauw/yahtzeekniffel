@@ -6,8 +6,12 @@ function randomNumber(min, max){
     
 }
 
+function diceFunction(diceNumber){
+    
+}
+
 $(document).ready(function(){
     $("#randomButton").click(function(){
-        $("#result").html(randomNumber(1,6));
+        $("#result1").html(randomNumber(1,6));
     });
 });
